@@ -6,7 +6,7 @@
 #    By: bepoisso <bepoisso@student.42perpignan.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/21 18:34:37 by bepoisso          #+#    #+#              #
-#    Updated: 2024/08/29 14:45:24 by bepoisso         ###   ########.fr        #
+#    Updated: 2024/09/02 20:08:26 by bepoisso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,9 @@ SRC_FILES=\
 	ft_lstclear.c\
 	ft_lstiter.c\
 	ft_lstmap.c\
-	ft_printf.c
+	ft_printf.c\
+	get_next_line.c\
+	get_next_line_utils.c\
 
 SRCS = $(addprefix $(SRC_DIR)/, $(SRC_FILES))
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRC_FILES:.c=.o))
