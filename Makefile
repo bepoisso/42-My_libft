@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: bepoisso <bepoisso@student.42perpignan.    +#+  +:+       +#+         #
+#    By: bepoisso <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/21 18:34:37 by bepoisso          #+#    #+#              #
-#    Updated: 2024/09/30 10:26:47 by bepoisso         ###   ########.fr        #
+#    Updated: 2024/11/06 13:41:58 by bepoisso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 INC_DIR = ./includes
 SRC_DIR = ./srcs
-OBJ_DIR = $(SRC_DIR)/objs
+OBJ_DIR = ./objs
 
 #_________________FILES_________________
 
