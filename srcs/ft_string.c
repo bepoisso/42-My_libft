@@ -6,11 +6,11 @@
 /*   By: bepoisso <bepoisso@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 22:55:06 by bepoisso          #+#    #+#             */
-/*   Updated: 2024/08/26 01:16:40 by bepoisso         ###   ########.fr       */
+/*   Updated: 2024/11/12 10:29:01 by bepoisso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 int	ft_putchar(char c)
 {
