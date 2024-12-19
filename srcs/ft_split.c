@@ -6,7 +6,7 @@
 /*   By: bepoisso <bepoisso@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 16:23:59 by bepoisso          #+#    #+#             */
-/*   Updated: 2024/11/12 10:28:50 by bepoisso         ###   ########.fr       */
+/*   Updated: 2024/12/19 14:13:18 by bepoisso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static int	ft_strllen(char const *str, char c)
 	return (i);
 }
 
-void	free_2d(char **s, int index)
+void	free_2d_split(char **s, int index)
 {
 	while (index >= 0)
 	{
@@ -73,7 +73,7 @@ char	**ft_split(char const *s, char c)
 		strs[i] = malloc(sizeof(char) * ft_strllen(s, c) + 1);
 		if (!strs[i])
 		{
-			free_2d(strs, i);
+			free_2d_split(strs, i);
 			return (NULL);
 		}
 		ft_strlcpy(strs[i], s, ft_strllen(s, c) + 1);
