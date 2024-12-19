@@ -6,7 +6,7 @@
 #    By: bepoisso <bepoisso@student.42perpignan.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/21 18:34:37 by bepoisso          #+#    #+#              #
-#    Updated: 2024/11/12 12:09:02 by bepoisso         ###   ########.fr        #
+#    Updated: 2024/12/19 12:09:14 by bepoisso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -82,6 +82,9 @@ $(NAME): $(OBJS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
 	$(CC) $(CFLAGS) -I$(INC_DIR) -o $@ -c $<
+
+$(OBJ_DIR):
+	@mkdir -p $(OBJ_DIR)
 
 clean:
 	rm -rf $(OBJS)
