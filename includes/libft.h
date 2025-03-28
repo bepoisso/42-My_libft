@@ -6,7 +6,7 @@
 /*   By: bepoisso <bepoisso@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 23:05:05 by bepoisso          #+#    #+#             */
-/*   Updated: 2025/03/28 14:40:11 by bepoisso         ###   ########.fr       */
+/*   Updated: 2025/03/28 17:05:01 by bepoisso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 //__________INCLUDE__________
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdbool.h>
 # include "ft_printf.h"
 # include "get_next_line.h"
 
@@ -75,7 +76,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 //__________My_Own__________
-void	free_2d(char ***tab);
+void	free_2d(char **tab);
 void	ft_freef(const char *str, ...);
 //____________________
 
