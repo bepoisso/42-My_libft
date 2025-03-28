@@ -6,22 +6,21 @@
 /*   By: bepoisso <bepoisso@student.42perpignan.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 12:19:29 by bepoisso          #+#    #+#             */
-/*   Updated: 2025/03/28 14:33:25 by bepoisso         ###   ########.fr       */
+/*   Updated: 2025/03/28 15:51:02 by bepoisso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	free_2d(char ***tab)
+void	free_2d(char **tab)
 {
 	int	i;
 
 	i = 0;
-	while (*tab[i])
+	while (tab[i])
 	{
-		free(*tab[i]);
+		free(tab[i]);
 		i++;
 	}
-	free(*tab);
-	*tab = NULL;
+	free(tab);
 }
